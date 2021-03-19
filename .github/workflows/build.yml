@@ -34,7 +34,7 @@ jobs:
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (Dactyl CC Left)
-        run: west build -s zmk/app -b nice_nano -- -DSHIELD=dactyl_cc_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config/boards/shields/dactyl_cc"
+        run: west build -s zmk/app -b nice_nano -- -DSHIELD=dactyl_cc_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Dactyl CC DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano.dts.pre.tmp
@@ -48,7 +48,7 @@ jobs:
           name: firmware
           path: dactyl_cc_left_nice_nano.uf2
       - name: West Build (Dactyl CC Right)
-        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=dactyl_cc_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config/boards/shields/dactyl_cc"
+        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=dactyl_cc_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
       - name: Dactyl CC Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
