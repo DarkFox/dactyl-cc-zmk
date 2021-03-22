@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
 #define MAC     1
@@ -73,7 +74,7 @@
         adjust_layer {
             bindings = <
     &none     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                         &none       &none     &none     &none     &none    &none  
-    &trans    &none        &none        &none        &reset       &none                                &none       &reset    &none     &none     &none    &none   
+    &trans    &out OUT_TOG &none        &none        &reset       &none                                &none       &reset    &none     &none     &none    &none   
     &trans    &none        &none        &none        &none        &none                                &none       &none     &none     &none     &none    &none   
     &none     &none        &bt BT_CLR   &none        &none        &bootloader                          &bootloader &none     &none     &none     &none    &none   
               &none        &none        &none        &none                                                         &none     &none     &none     &none 
