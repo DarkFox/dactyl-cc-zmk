@@ -11,6 +11,10 @@
 #define HYPER(key) LS(LC(LA(LG(key))))
 #define MEH(key)   LS(LC(LA(key)))
 
+&sl {
+    release-after-ms = <5000>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
