@@ -49,7 +49,7 @@
             bindings = <
     &kp F12    &kp F1    &kp F2   &kp F3     &kp F4    &kp F5                            &kp F6        &kp F7       &kp F8           &kp F9            &kp F10     &kp F11
     &sl ADJUST &none     &none    &none      &none     &tog MAC                          &none         &kp LC(1)    &kp LC(PG_UP)    &kp LC(PG_DN)     &kp LC(9)   &none 
-    &none      &kp CAPS  &none    &none      &none     &none                             &kp LEFT      &kp DOWN     &kp UP           &kp RIGHT         &none       &none 
+    &trans     &kp CAPS  &none    &none      &none     &none                             &kp LEFT      &kp DOWN     &kp UP           &kp RIGHT         &none       &none 
     &none      &none     &none    &none      &none     &none                             &kp MEH(N)    &kp MEH(M)   &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &kp LG(TAB) &none 
                &none     &kp C_PP &kp C_PREV &kp C_NEXT                                                &kp C_VOL_UP &kp C_VOL_DN     &kp C_MUTE        &none 
                                                    &kp C_BRI_UP &kp C_BRI_DN   &kp PSCRN &kp INS
