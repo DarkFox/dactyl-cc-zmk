@@ -4,9 +4,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
-#define ADJUST  3
+#define MAC     1
+#define LOWER   2
+#define RAISE   3
+#define ADJUST  4
 
 #define HYPER(key) LS(LC(LA(LG(key))))
 #define MEH(key)   LS(LC(LA(key)))
@@ -30,6 +31,17 @@
             >;
         };
 
+        mac_layer {
+            bindings = <
+    &kp EQUAL &kp N1    &kp N2         &kp N3    &kp N4    &kp N5                             &kp N6    &kp N7    &kp N8    &kp N9          &kp N0   &tog BSPC
+    &kp TAB   &kp Q     &kp W          &kp E     &kp R     &kp T                              &kp Y     &kp U     &kp I     &kp O           &kp P    &kp MINUS
+    &mo BSPC  &kp A     &kp S          &kp D     &kp F     &kp G                              &kp H     &kp J     &kp K     &kp L           &kp SEMI &kp SQT
+    &kp LSHFT &kp Z     &kp X          &kp C     &kp V     &kp B                              &kp N     &kp M     &kp COMMA &kp DOT         &kp FSLH &kp RSHFT
+              &kp LCTRL &lt RAISE BSLH &kp LEFT  &kp RIGHT &kp SPACE                          &kp RET   &kp DOWN  &kp UP    &lt LOWER LBKT  &kp RBKT
+              &kp GRAVE &kp TAB        &kp HOME  &kp UNDER &kp LGUI                           &kp TAB   &kp RALT  &kp RALT  &kp RALT        &kp ESC
+            >;
+        };
+
         lower_layer {
             bindings = <
     &kp F12    &kp F1    &kp F2         &kp F3    &kp F4    &kp F5                             &kp F6     &kp F7     &kp F8           &kp F9            &kp F10     &kp F11
@@ -38,7 +50,8 @@
     &none      &none     &none          &none     &none     &none                              &kp MEH(N) &kp MEH(M) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &kp LG(TAB) &none 
                &kp LCTRL &lt RAISE BSLH &kp LEFT  &kp RIGHT &kp SPACE                          &kp RET    &kp DOWN   &kp UP           &lt LOWER LBKT    &kp RBKT
                &kp GRAVE &kp TAB        &kp HOME  &kp UNDER &kp LGUI                           &kp TAB    &kp RALT   &kp RALT         &kp RALT          &kp ESC
-            >;       };
+            >;
+        };
 
         raise_layer {
             bindings = <
