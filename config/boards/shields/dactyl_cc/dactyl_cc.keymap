@@ -47,7 +47,7 @@
     &kp F12    &kp F1    &kp F2         &kp F3    &kp F4    &kp F5                             &kp F6     &kp F7     &kp F8           &kp F9            &kp F10     &kp F11
     &sl ADJUST &kp HASH  &kp LPAR       &kp RPAR  &none     &tog MAC                           &none      &kp LC(1)  &kp LC(PG_UP)    &kp LC(PG_DN)     &kp LC(9)   &none 
     &trans     &kp PRCNT &kp LBRC       &kp RBRC  &kp PIPE  &none                              &kp LEFT   &kp DOWN   &kp UP           &kp RIGHT         &none       &none 
-    &none      &kp AT    &kp LBRK       &kp RBRK  &kp GT    &none                              &kp MEH(N) &kp MEH(M) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &kp LG(TAB) &none 
+    &none      &kp AT    &kp LBKT       &kp RBKT  &kp GT    &none                              &kp MEH(N) &kp MEH(M) &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &kp LG(TAB) &none 
                &kp LCTRL &lt RAISE BSLH &kp LEFT  &kp RIGHT &kp SPACE                          &kp RET    &kp DOWN   &kp UP           &lt LOWER LBKT    &kp RBKT
                &kp GRAVE &kp TAB        &kp HOME  &kp UNDER &kp LGUI                           &kp TAB    &kp RALT   &kp RALT         &kp RALT          &kp ESC
             >;
