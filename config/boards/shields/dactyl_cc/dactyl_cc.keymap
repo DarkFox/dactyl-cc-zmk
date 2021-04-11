@@ -53,12 +53,12 @@
 
         adjust_layer {
             bindings = <
-    &none     &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                         &none       &none     &none     &none           &none    &none  
-    &trans    &out OUT_USB &out OUT_BLE   &none        &reset       &none                                &none       &reset    &none     &none           &none    &none   
-    &trans    &none        &none          &none        &none        &none                                &none       &none     &none     &none           &none    &none   
-    &none     &none        &bt BT_CLR     &none        &none        &bootloader                          &bootloader &none     &none     &none           &none    &none   
-              &kp LCTRL    &lt RAISE BSLH &kp LEFT     &kp RIGHT    &kp SPACE                            &kp RET     &kp DOWN  &kp UP    &lt LOWER LBKT  &kp RBKT
-              &kp GRAVE    &kp TAB        &kp HOME     &kp UNDER    &kp LGUI                             &kp TAB     &kp RALT  &kp RALT  &kp RALT        &kp ESC
+    &none     &bt BT_SEL 0 &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4              &none       &none     &none     &none           &none    &none  
+    &trans    &out OUT_USB &out OUT_BLE   &none        &reset       &none                     &none       &reset    &none     &none           &none    &none   
+    &trans    &none        &none          &none        &none        &none                     &none       &none     &none     &none           &none    &none   
+    &none     &none        &bt BT_CLR     &none        &none        &bootloader               &bootloader &none     &none     &none           &none    &none   
+              &kp LCTRL    &lt RAISE BSLH &kp LEFT     &kp RIGHT    &kp SPACE                 &kp RET     &kp DOWN  &kp UP    &lt LOWER LBKT  &kp RBKT
+              &kp GRAVE    &kp TAB        &kp HOME     &kp UNDER    &kp LGUI                  &kp TAB     &kp RALT  &kp RALT  &kp RALT        &kp ESC
             >;
         };
     };
