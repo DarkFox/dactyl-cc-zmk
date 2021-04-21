@@ -52,7 +52,7 @@
     &sl ADJUST &none     &none    &none      &none     &none                             &none         &kp LC(1)    &kp LC(PG_UP)    &kp LC(PG_DN)     &kp LC(9)   &none 
     &trans     &kp CAPS  &none    &none      &none     &none                             &kp LEFT      &kp DOWN     &kp UP           &kp RIGHT         &none       &none 
     &trans     &none     &none    &none      &none     &none                             &kp MEH(N)    &kp MEH(M)   &kp LG(LC(LEFT)) &kp LG(LC(RIGHT)) &kp LG(TAB) &trans 
-               &none     &kp C_PP &kp C_PREV &kp C_NEXT                                                &kp C_VOL_DN &kp C_VOL_UP     &kp C_MUTE        &none 
+               &none     &kp C_PP &kp C_PREV &kp C_NEXT                                                &kp C_VOL_UP &kp C_VOL_DN     &kp C_MUTE        &none 
                                                    &kp C_BRI_UP &kp C_BRI_DN   &kp PSCRN &kp INS
                                                                 &kp HOME       &kp PG_UP
                                             &trans &trans       &kp END        &kp PG_DN &trans    &trans   
