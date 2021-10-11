@@ -16,10 +16,6 @@
     release-after-ms = <5000>;
 };
 
-&kscan0 {
-    debounce-period = <50>;
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
