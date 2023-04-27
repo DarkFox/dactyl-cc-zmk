@@ -13,5 +13,11 @@
 #
 ---
 
-board: [ "nice_nano" ]
-shield: [ "dactyl_cc_left", "dactyl_cc_right" ]
+
+include:
+  - board: nice_nano
+    shield: dactyl_cc_left
+  - board: nice_nano
+    shield: dactyl_cc_right
+  - board: nice_nano
+    shield: settings_reset
