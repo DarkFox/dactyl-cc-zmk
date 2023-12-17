@@ -16,6 +16,7 @@
     release-after-ms = <5000>;
 };
 
+
 &kscan0 {
     debounce-press-ms = <30>;
     debounce-release-ms = <30>;
@@ -69,20 +70,20 @@
     &kp TAB   &kp T     &kp Q    &kp W     &kp E     &kp R                           &trans    &trans    &trans    &trans    &trans    &trans
     &kp G     &kp LSHFT &kp A    &kp S     &kp D     &kp F                           &trans    &trans    &trans    &trans    &trans    &trans
     &kp M     &trans    &trans   &trans    &trans    &trans                          &trans    &trans    &trans    &trans    &trans    &trans
-              &trans    &trans   &trans    &trans                                              &trans    &trans    &trans    &trans
+              &kp COMMA &kp DOT  &trans    &trans                                              &trans    &trans    &trans    &trans
                                                      &trans    &trans      &trans    &trans
-                                                               &trans      &trans   
+                                                               &kp BSLH    &trans   
                                            &kp SPACE &kp LCTRL &kp LALT    &trans    &trans    &trans   
             >;
         };
 
         adjust_layer {
             bindings = <
-    &none     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                         &none       &none     &none     &none     &none    &none  
-    &trans    &out OUT_USB &out OUT_BLE &none        &reset       &tog MAC                             &none       &reset    &none     &none     &none    &none   
-    &trans    &none        &none        &none        &none        &none                                &none       &none     &none     &none     &none    &none   
-    &none     &none        &bt BT_CLR   &none        &none        &bootloader                          &bootloader &none     &none     &none     &none    &none   
-              &none        &none        &none        &none                                                         &none     &none     &none     &none 
+    &none     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                         &none       &none      &none     &none     &none    &none  
+    &trans    &out OUT_USB &out OUT_BLE &none        &sys_reset   &tog MAC                             &none       &sys_reset &none     &none     &none    &none   
+    &trans    &none        &none        &none        &none        &none                                &none       &none      &none     &none     &none    &none   
+    &none     &none        &bt BT_CLR   &none        &none        &bootloader                          &bootloader &none      &none     &none     &none    &none   
+              &none        &none        &none        &none                                                         &none      &none     &none     &none 
                                                                   &none       &none       &none     &none 
                                                                               &none       &none    
                                                          &none    &none       &none       &none     &none     &none    
