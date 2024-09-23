@@ -5,9 +5,11 @@
 
 #define DEFAULT      0 // Default layer
 #define L_MAC        1 // Mac overlay
-#define L_L          2 // Lower layer
-#define L_GAME       3 // Gaming overlay
-#define L_SET        4 // Settings layer
+#define L_SH         2 // Single Hand layer
+#define L_SHM        3 // Single Hand Mirror layer
+#define L_L          4 // Lower layer
+#define L_GAME       5 // Gaming overlay
+#define L_SET        6 // Settings layer
 
 // Modifiers
 #define HYPER(key)   LS(LC(LA(LG(key)))) // LSHFT+LCTRL+LALT+LGUI
@@ -35,6 +37,15 @@
 };
 
 / {
+       behaviors {
+              bsdel: backspace_delete {
+                     compatible = "zmk,behavior-mod-morph";
+                     #binding-cells = <0>;
+                     bindings = <&kp BACKSLASH>, <&kp DELETE>;
+                     mods = <(MOD_LSFT|MOD_RSFT)>;
+              };
+       };
+
        keymap {
               compatible = "zmk,keymap";
 
@@ -63,6 +74,34 @@
                                                         &trans        &trans        &trans        &trans
                                                                       &trans        &trans
                                           &kp LGUI      &kp LALT      &kp LCTRL     &trans        &trans        &trans
+                     >;
+              };
+
+              single_hand_layer {
+                     display-name = "Single Hand";
+                     bindings = <
+&kp EQUAL     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &kp MINUS
+&kp TAB       &kp Q         &kp W         &kp E         &kp R         &kp T         &kp Y         &kp U         &kp I         &kp O         &kp P         &kp BSLH
+&trans        &kp A         &kp S         &kp D         &kp F         &kp G         &kp H         &kp J         &kp K         &kp L         &kp SEMI      &lt L_L CAPS
+&kp LSHFT     &kp Z         &kp X         &kp C         &kp V         &kp B         &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
+              &kp GRAVE     &kp SQT       &kp LCTRL     &kp LALT                                  &kp LALT      &kp RCTRL     &kp LBKT      &kp RBKT
+                                                        &kp ALTGR     &kp ESC       &kp ESC       &kp ALTGR
+                                                                      &bsdel        &bsdel
+                                          &lt l_SHM SP  &kp RET       &kp LGUI      &kp LGUI      &kp RET       &lt l_SHM SP
+                     >;
+              };
+
+              single_hand_mirror_layer {
+                     display-name = "Single Hand Mirror";
+                     bindings = <
+&kp MINUS     &kp N0        &kp N9        &kp N8        &kp N7        &kp N6        &kp N5        &kp N4        &kp N3        &kp N2        &kp N1        &kp EQUAL
+&kp BSLH      &kp P         &kp O         &kp I         &kp U         &kp Y         &kp T         &kp R         &kp E         &kp W         &kp Q         &kp TAB
+&trans        &kp SEMI      &kp L         &kp K         &kp J         &kp H         &kp G         &kp F         &kp D         &kp S         &kp A         &trans
+&kp RSHFT     &kp FSLH      &kp DOT       &kp COMMA     &kp M         &kp N         &kp B         &kp V         &kp C         &kp X         &kp Z         &kp LSHIFT
+              &kp RBKT      &kp LBKT      &kp LCTRL     &kp LALT                                  &kp LALT      &kp RCTRL     &kp SQT       &kp GRAVE
+                                                        &trans        &trans        &trans        &trans
+                                                                      &trans        &trans
+                                          &trans        &trans        &trans        &trans        &trans        &trans
                      >;
               };
 
@@ -99,7 +138,7 @@
                      bindings = <
 &none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none         &none         &none         &none         &none
 &trans        &out OUT_USB  &out OUT_BLE  &none         &sys_reset    &none         &none         &sys_reset    &none         &none         &none         &none
-&trans        &tog L_MAC    &none         &none         &none         &tog L_GAME   &none         &none         &none         &none         &none         &none
+&trans        &tog L_MAC    &tog L_SH     &none         &none         &tog L_GAME   &none         &none         &none         &none         &none         &none
 &none         &none         &bt BT_CLR    &none         &none         &bootloader   &bootloader   &none         &none         &none         &none         &none
               &none         &none         &none         &none                                     &none         &none         &none         &none
                                                         &none         &none         &none         &none
