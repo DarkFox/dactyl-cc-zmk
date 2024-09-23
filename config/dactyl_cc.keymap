@@ -122,13 +122,13 @@
               game_layer {
                      display-name = "Gaming";
                      bindings = <
-&trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &tog L_GAME
 &kp TAB       &kp T         &kp Q         &kp W         &kp E         &kp R         &trans        &trans        &trans        &trans        &trans        &trans
 &kp G         &kp LSHFT     &kp A         &kp S         &kp D         &kp F         &trans        &trans        &trans        &trans        &trans        &trans
 &kp M         &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
               &kp COMMA     &kp DOT       &trans        &trans                                    &trans        &trans        &trans        &trans
                                                         &kp I         &kp M         &trans        &trans
-                                                                      &kp BSLH      &trans
+                                                                      &kp ENTER     &trans
                                           &kp SP        &kp LCTRL     &kp LALT      &trans        &trans        &trans
                      >;
               };
