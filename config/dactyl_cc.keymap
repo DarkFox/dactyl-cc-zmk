@@ -87,7 +87,7 @@
               &kp GRAVE     &kp SQT       &kp LCTRL     &kp LALT                                  &kp LALT      &kp RCTRL     &kp LBKT      &kp RBKT
                                                         &kp ALTGR     &kp ESC       &kp ESC       &kp ALTGR
                                                                       &bsdel        &bsdel
-                                          &lt l_SHM SP  &kp RET       &kp LGUI      &kp LGUI      &kp RET       &lt l_SHM SP
+                                          &lt L_SHM SP  &kp RET       &kp LGUI      &kp LGUI      &kp RET       &lt L_SHM SP
                      >;
               };
 
