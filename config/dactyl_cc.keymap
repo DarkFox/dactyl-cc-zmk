@@ -23,11 +23,6 @@
 #define VOL_UP       C_VOLUME_UP
 #define VOL_DN       C_VOLUME_DOWN
 
-#define BT0          BT_SEL 0
-#define BT1          BT_SEL 1
-#define BT2          BT_SEL 2
-#define BT3          BT_SEL 3
-#define BT4          BT_SEL 4
 
 &sl {
        release-after-ms = <5000>;
@@ -102,7 +97,7 @@
               ettings_layer {
                      display-name = "Settings";
                      bindings = <
-&none         &bt BT0       &bt BT1       &bt BT2       &bt BT3       &bt BT4       &none         &none         &none         &none         &none         &none
+&none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none         &none         &none         &none         &none
 &trans        &out OUT_USB  &out OUT_BLE  &none         &sys_reset    &none         &none         &sys_reset    &none         &none         &none         &none
 &trans        &tog L_MAC    &tog L_SH     &none         &none         &tog L_GAME   &none         &none         &none         &none         &none         &none
 &none         &none         &bt BT_CLR    &none         &none         &bootloader   &bootloader   &none         &none         &none         &none         &none
