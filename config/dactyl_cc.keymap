@@ -133,7 +133,7 @@
                      bindings = <
 &none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none         &none         &none         &none         &none
 &mo L_SET     &out OUT_USB  &out OUT_BLE  &none         &sys_reset    &none         &none         &sys_reset    &none         &none         &none         &none
-&trans        &tog L_MAC    &tog L_SH     &none         &none         &tog L_GAME   &none         &none         &none         &none         &none         &none
+&trans        &tog L_MAC    &tog L_SH     &none         &none         &to L_GAME    &none         &none         &none         &none         &none         &none
 &none         &none         &bt BT_CLR    &none         &none         &bootloader   &bootloader   &none         &none         &none         &none         &none
               &none         &none         &none         &none                                     &none         &none         &none         &none
                                                         &none         &none         &none         &none
