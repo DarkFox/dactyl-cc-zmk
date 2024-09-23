@@ -41,7 +41,7 @@
               bsdel: backspace_delete {
                      compatible = "zmk,behavior-mod-morph";
                      #binding-cells = <0>;
-                     bindings = <&kp BACKSLASH>, <&kp DELETE>;
+                     bindings = <&kp BACKSPACE>, <&kp DELETE>;
                      mods = <(MOD_LSFT|MOD_RSFT)>;
               };
        };
