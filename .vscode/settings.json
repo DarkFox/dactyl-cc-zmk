@@ -1,0 +1,55 @@
+{
+    "[dts]": {
+        "editor.tabSize": 7,
+        "editor.rulers": [
+            {
+                "column": 0,
+                "color": "#00f6"
+            },
+            {
+                "column": 14,
+                "color": "#00f6"
+            },
+            {
+                "column": 28,
+                "color": "#00f6"
+            },
+            {
+                "column": 42,
+                "color": "#00f6"
+            },
+            {
+                "column": 56,
+                "color": "#00f6"
+            },
+            {
+                "column": 70,
+                "color": "#00f6"
+            },
+            {
+                "column": 84,
+                "color": "#f006"
+            },
+            {
+                "column": 98,
+                "color": "#f006"
+            },
+            {
+                "column": 112,
+                "color": "#f006"
+            },
+            {
+                "column": 126,
+                "color": "#f006"
+            },
+            {
+                "column": 140,
+                "color": "#f006"
+            },
+            {
+                "column": 154,
+                "color": "#f006"
+            },
+        ]
+    },
+}
