@@ -148,14 +148,14 @@
               game_layer {
                      display-name = "Gaming";
                      bindings = <
-&trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &tog KGAM
-&kp TAB       &kp T         &kp Q         &kp W         &kp E         &kp R         &trans        &trans        &trans        &trans        &trans        &trans
-&kp G         &kp LSHFT     &kp A         &kp S         &kp D         &kp F         &trans        &trans        &trans        &trans        &trans        &trans
-&kp M         &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans        &trans
-              &kp COMMA     &kp DOT       &trans        &trans                                    &trans        &trans        &trans        &trans
-                                                        &kp I         &kp M         &trans        &trans
-                                                                      &kp ENTER     &trans
-                                          &kp SP        &kp LCTRL     &kp LALT      &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &kp N5        &kp N4        &kp N3        &kp N2        &kp N1        &tog KGAM
+&kp TAB       &kp T         &kp Q         &kp W         &kp E         &kp R         &kp R         &kp E         &kp W         &kp Q         &kp T         &kp TAB
+&kp G         &kp LSHFT     &kp A         &kp S         &kp D         &kp F         &kp F         &kp A         &kp S         &kp D         &kp LSHFT     &kp G
+&kp M         &trans        &trans        &trans        &trans        &trans        &kp B         &kp V         &kp C         &kp X         &kp Z         &kp M
+              &kp COMMA     &kp DOT       &trans        &trans                                    &kp LEFT      &kp RIGHT     &kp DOT       &kp COMMA
+                                                        &kp I         &kp M         &kp M         &kp I
+                                                                      &kp ENTER     &kp ENTER
+                                          &kp SP        &kp LCTRL     &kp LALT      &kp LALT      &kp LCTRL     &kp SP
                      >;
               };
 
